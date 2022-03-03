@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dashboard - Abizar Egi Mahendra</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/e6091e9734.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <nav>
+      <div class="nav-left">
+        <img src="logo.png" class="logo">
+        <ul>
+          <li><img src="notification.png"></li>
+          <li><img src="inbox.png"></li>
+          <li><img src="video.png"></li>
+        </ul>
+
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="search.png">
+          <input id="search-text" type="text" placeholder="Search..">
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="profile-pic.png">
+        </div>
+      </div>
+      <!-- setting menu -->
+      <div class="settings-menu">
+
+        <div id="dark-btn" class="dark-btn-on">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="profile-pic.png">
+            <div>
+              <p>Abizar Egi Mahendra</p>
+              <a href="#">See your profile</a>
+              
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="feedback.png">
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+          <div class="settings-links">
+            <img src="setting.png" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="help.png" class="settings-icon">
+            <a href="#">Help & Support <img src="arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="display.png" class="settings-icon">
+            <a href="#">Display & Accesibility <img src="arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="logout.png" class="settings-icon">
+            <a href="#">Logout <img src="arrow.png" width="10px"></a>
+          </div>
+        </div>
+
+        
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- left sidebar -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="https://medium.com/@abizaregi21"><img src="news.png"> Article Medium</a>
+          <a href="https://www.linkedin.com/in/abizar-egi-mahendra/"><img src="friends.png"> LinkedIn Profile</a>
+          <a href="http://portfolio.abizaregi.repl.co/"><img src="group.png"> Portfolio Website</a>
+          <a href="https://github.com/abizaregi"><img src="watch.png"> Repository Github</a>
+          <a href="http://thriftcrewneck.xyz/monopis/"><img src="marketplace.png"> Online Shop</a>
+          
+          <a href="#">See More</a>
+
+        </div>
+        <div class="shortcut-links skills__open">
+          <div class="shortcut-header">
+            <div class="sidebar-title">
+              <p>Application & Dashboard </p>
+              <i class="fa-solid fa-caret-down skills__arrow"></i>
+            </div>
+            
+            <div class="skills__list">
+              <a href="https://share.streamlit.io/abizaregi/loan-eligibility-app/main/predict-app.py"><img src="shortcut-1.png"> Loan Eligibility - Application</a>
+              <a href="https://share.streamlit.io/abizaregi/sales-data-analysis-app/main/sales-app.py"><img src="shortcut-2.png"> Sales Data Analysis - Application</a>
+              <a href="https://share.streamlit.io/abizaregi/customer-segmentation-app/main/segmen-app.py"><img src="shortcut-3.png"> Customer Segmentation - Application</a>
+              <a href="shortcut-4.png"><img src="shortcut-4.png"> Excel Macro & VBA - Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shortcut-links skills__close">
+          <div class="shortcut-header">
+            <div class="sidebar-title">
+              <p>Certificate</p> 
+              <i class="fa-solid fa-caret-down skills__arrow"></i>
+            </div>
+            <div class="skills__list">
+              <a href="sertif-3.jpg"><img src="sertif-3.jpg"> Professional Academy - Data Scientist</a>
+              <a href="sertif-4.jpg"><img src="sertif-4.jpg"> Fresh Graduate Academy - Machine Learning</a>
+              <a href="sertif-1.jpg"><img src="sertif-1.jpg"> Certificate - Microsoft Excel</a>
+              <a href="sertif-2.jpg"><img src="sertif-2.jpg"> Certificate - Fundamental Machine Learning</a>
+              <a href="sertif-5.jpg"><img src="sertif-5.jpg"> Certificate of Excellence - Data Studio, R Studio & SQL </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="upload.png">
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="member-1.png">
+            <p>Python</p>
+          </div>
+          <div class="story story3">
+            <img src="member-2.png">
+            <p>Excel</p>
+          </div>
+          <div class="story story4">
+            <img src="member-3.png">
+            <p>Tableau</p>
+          </div>
+          <div class="story story5">
+            <img src="member-4.png">
+            <p>Power BI</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="profile-pic.png">
+            <div>
+              <p>Abizar Egi Mahendra</p>
+              <select class="small">
+                <option>Public</option>
+                <option>Private</option>
+                <option> Friends</option>
+              </select>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea rows="3" placeholder="What's on your mind, Abizar?"></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="live-video.png"> Live Video</a>
+              <a href="#"><img src="photo.png"> Photo/Video</a>
+              <a href="#"><img src="feeling.png"> Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="profile-pic.png">
+              <div>
+                <p>Abizar Egi Mahendra</p>
+                <span>Sept 10 2021, 19:27</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          
+          <p class="post-text"><span>Segmentasi customer</span> dilakukan untuk membagi atau mengelompokkan customer dengan karakteristik tertentu yang mirip. Segmentasi customer dapat dilakukan dengan cara clustering menggunakan algoritma KMeans dari bahasa pemrograman python. <a href="#">#Python</a> <a href="#">#CustomerSegmentation</a> <a href="#">#KMeans</a>. <a href="https://medium.com/@abizaregi21/bank-customer-segmentation-with-kmeans-d9cf95e297c9">Baca selengkapnya..</a></p>
+          <img src="feed-image-1.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="like-blue.png"> 120</div>
+                <div><img src="comments.png"> 45</div>
+                <div><img src="share.png"> 20</div>
+            </div>
+            <div class="post-profil-icon">
+                <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="profile-pic.png">
+              <div>
+                <p>Abizar Egi Mahendra</p>
+                <span>Sept 16 2021, 19:27</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          
+          <p class="post-text"><span>Sales data analysis</span> merupakan analisis pada data penjualan suatu perusahaan dengan mengambil nilai-nilai yang terkandung didalam hasil eksplorasi data untuk keperluan prospek bisnis kedepannya. Dengan menggunakan scikit learn pada bahasa pemrograman python, kita juga dapat melakukan prediksi penjualan pada bulan berikutnya. <a href="#">#Python</a> <a href="#">#ScikitLearn</a>. <a href="https://medium.com/@abizaregi21/sales-data-analysis-with-python-part-ii-f09ddf134f9d">Baca selengkapnya..</a></p>
+          <img src="feed-image-2.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="like-blue.png"> 110</div>
+                <div><img src="comments.png"> 65</div>
+                <div><img src="share.png"> 20</div>
+            </div>
+            <div class="post-profil-icon">
+                <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="profile-pic.png">
+              <div>
+                <p>Abizar Egi Mahendra</p>
+                <span>Feb 16 2022, 19:27</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          
+          <p class="post-text"><span>Loan eligibility App</span> dideploy dengan menggunakan streamlit dan python. Aplikasi ini untuk memprediksi kelayakan seseorang dalam pengajuan hutang berdasarkan data pendapatan dan latar belakang. <a href="#">#Python</a> <a href="#">#Streamlit</a>. <a href="https://share.streamlit.io/abizaregi/loan-eligibility-app/main/predict-app.py">Lihat aplikasi disini</a></p>
+          <img src="shortcut-1.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="like-blue.png"> 120</div>
+                <div><img src="comments.png"> 45</div>
+                <div><img src="share.png"> 20</div>
+            </div>
+            <div class="post-profil-icon">
+                <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="profile-pic.png">
+              <div>
+                <p>Abizar Egi Mahendra</p>
+                <span>Feb 16 2021, 20:13</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          
+          <p class="post-text"><span>Sales data analysis app</span> dideploy dengan menggunakan streamlit dan python. Aplikasi ini hanya untuk visualisasi data penjualan dan prediksi data penjualan di bulan berikutnya, serta dapat di breakdown per bulan. <a href="#">#Python</a> <a href="#">#Streamlit</a>. <a href="https://share.streamlit.io/abizaregi/sales-data-analysis-app/main/sales-app.py">Lihat aplikasi disini.</a></p>
+          <img src="shortcut-2.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="like.png"> 120</div>
+                <div><img src="comments.png"> 45</div>
+                <div><img src="share.png"> 20</div>
+            </div>
+            <div class="post-profil-icon">
+                <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="profile-pic.png">
+              <div>
+                <p>Abizar Egi Mahendra</p>
+                <span>Feb 18 2022, 20:20</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          
+          <p class="post-text"><span>Customer segmentation app</span> dideploy dengan menggunakan streamlit dan python. Aplikasi ini hanya untuk visualisasi eksplorasi dari data nasabah bank dan hasil segmentasi customer pada nasabah bank berdasarkan balance dan umur. <a href="#">#Python</a> <a href="#">#Streamlit</a>. <a href="https://share.streamlit.io/abizaregi/customer-segmentation-app/main/segmen-app.py">Lihat aplikasi disini.</a></p>
+          <img src="shortcut-3.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="like.png"> 121</div>
+                <div><img src="comments.png"> 45</div>
+                <div><img src="share.png"> 20</div>
+            </div>
+            <div class="post-profil-icon">
+                <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="profile-pic.png">
+              <div>
+                <p>Abizar Egi Mahendra</p>
+                <span>Feb 18 2022, 18:20</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          
+          <p class="post-text"><span>Dashboard interactive</span> dibentuk menggunakan microsoft excel dengan macro dan VBA. Pada dashboard terdapat user interface sederhana untuk user login, user sign-up, logout, dan input data baru. <a href="#">#Excel</a> <a href="#">#MacroVBA</a>.</p>
+          <img src="shortcut-4.png" class="post-img">
+
+          <div class="post-row">
+            <div class="activity-icons">
+                <div><img src="like.png"> 121</div>
+                <div><img src="comments.png"> 45</div>
+                <div><img src="share.png"> 20</div>
+            </div>
+            <div class="post-profil-icon">
+                <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+      <!-- <button type="button" class="load-more-btn">Load More</button> -->
+      </div>
+      <!-- right sidebar -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Journey</h4>
+          <a href="#">See All</a>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>30</h3>
+            <span>Sept 21</span>
+          </div>
+          <div class="right-event">
+            <h4>Bachelor of Economics</h4>
+            <p><i class="fa-solid fa-building"></i> UIN Sunan Ampel Surabaya</p>
+            <a href="http://uinsby.ac.id/">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>15</h3>
+            <span>June 21</span>
+          </div>
+          <div class="right-event">
+            <h4>Data Analyst - Internship</h4>
+            <p><i class="fa-solid fa-building"></i> Zero One Digital</p>
+            <a href="http://zero-one-digital.com/">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>01</h3>
+            <span>Oct 21</span>
+          </div>
+          <div class="right-event">
+            <h4>Ad Operations - Part Time</h4>
+            <p><i class="fa-solid fa-building"></i> Zero One Digital</p>
+            <a href="http://zero-one-digital.com/">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>03</h3>
+            <span>Jan 22</span>
+          </div>
+          <div class="right-event">
+            <h4>Junior Ad Ops - Full Time</h4>
+            <p><i class="fa-solid fa-building"></i> Zero One Digital</p>
+            <a href="http://zero-one-digital.com/">More Info</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Responsive Website</h4>
+          <a href="https://portfolio.abizaregi.repl.co/">See More</a>
+        </div>
+        <img src="advertisement.png" class="sidebar-ads">
+
+        <div class="skills-links skills__open">
+          <div class="skills-header">
+            <div class="sidebar-title">
+              <h4>Tools</h4>
+              <i class="fa-solid fa-caret-down skills__arrow"></i>
+            </div>
+            <div class="skills__list">
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-1.png">
+                </div>
+                <p>Python</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-2.png">
+                </div>
+                <p>Excel</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-3.png">
+                </div>
+                <p>Tableau</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-4.png">
+                </div>
+                <p>Power BI</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-5.png">
+                </div>
+                <p>HTML</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-6.png">
+                </div>
+                <p>CSS</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-7.png">
+                </div>
+                <p>Javascript</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-8.png">
+                </div>
+                <p>PHP</p>
+              </div>
+              <div class="online-list">
+                <div class="online">
+                  <img src="member-9.png">
+                </div>
+                <p>MySQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&#169; Copyright 2021 - Abizar Egi Mahendra</p>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
